@@ -1,6 +1,6 @@
 # Amoblando Tu Hogar
 ## Integrantes:
-Carlos Andres Alvarez
+Carlos Andres Alvarez y
 John Jairo Vargas
 
 ## Descripción:
