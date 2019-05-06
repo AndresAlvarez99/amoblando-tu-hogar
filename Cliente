@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.1.12
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Amoblando </title>
+    <!-- Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" type="Image/x-icon" href="assets/Image/logoico.ico">		
+    <link href="assets/node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="assets/node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="assets/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+  
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg">
+      <header class="app-header navbar container-fluid" style="background: #F2EADC ;border-color: #F2EADC">
+      
+      <a class="navbar-brand mr-sm-2" href="?c=clientes&m=homeclientes">
+        <img class="navbar-brand-full" src="assets/Image/logoamoblando.png" width="60" height="50" alt="CoreUI Logo">
+        
+        </a>
+      <div class="navbar-nav align-items-center d-none d-lg-block" style="background: #F2EADC; border-color: #F2EADC">
+         
+            <form class="form-inline input-group ">
+                <input class="form-control mr-sm-2 " placeholder="Buscar un producto" aria-label="Search" style="
+                       width: 500px" >
+                <button class="btn btn-warning my-2 my-sm-0 "  type="submit"><strong><i class="fa fa-search"> </i> Buscar</strong></button>
+            </form>
+          
+      
+        </div>
+      <ul class="nav navbar-nav d-md-down-none " >
+        
+        <li class="nav-item active px-3">
+            <a class="nav-link" href="?c=clientes&m=homeclientes"><strong><font color="#5b3924">Inicio</font></strong></a>
+        </li>
+        <li class="nav-item active px-3">
+          <a class="nav-link" href="?c=clientes&m=quienessomos"><strong><font color="#5b3924">Quienes Somos</font></strong></a>
+        </li>
+        <li class="nav-item active px-3">
+          <a class="nav-link" href="?c=clientes&m=productosRegistrados"><strong><font color="#5b3924">Productos</font></strong></a>
+        </li>
+        
+        
+             
+        <li class="nav-item active ">
+          <a class="nav-link text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <strong><font color="#5b3924">Iniciar sesion</font></strong><img class="img-avatar" src="assets/Image/1.png" alt="admin@bootstrapmaster.com">
+              
+          </a>
+          <div class="dropdown-menu dropdown-menu-right " style="border: none; background: #F2EADC">
+            
+              <a class="dropdown-item" style="border: none"href="?c=login&m=login">
+                  <font color="#5b3924"><i class="fa fa-user" style="color: #ff9f1c"></i> Administrador</a></font>
+            
+            
+            <a class="dropdown-item" href="?c=login&m=loginclientes">
+              <font color="#5b3924"><i class="fa fa-user" style="color: #ff9f1c"></i> Clientes </a></font>
+          </div>
+            
+            
+        </li>
+        <a href=""><i class="fa fa-2x fa-cart-plus px-3" style="color: #5b3924"></i></a>
+      </ul>
+     
+    </header>
+<style>
+   #Sincambio .nav-link:hover:not(.active) {
+  background-color: #f86c6b;
+  
+  
+
+
+}
+
+
+</style>
+    <div class="app-body">
+      <div class="sidebar bg-">
+        <nav class="sidebar-nav">
+            <ul class="nav" id="Sincambio">
+           
+            <li class="nav-title ">Control</li>
+            <li class="nav-item">
+              <a class="nav-link" href="?c=tendero&m=home">
+                <i class="nav-icon fa fa-play-circle"></i> Inicio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="?c=tendero&m=nuevoProducto">
+                <i class="nav-icon fa fa-cart-plus"></i> Registra un Producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?c=tendero&m=productosRegistrados">
+                <i class="nav-icon fa fa-list"></i> Productos en Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?c=tendero&m=registrousuarios">
+                <i class="nav-icon fa fa-user-plus"></i> Registra Usuario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?c=tendero&m=usuariosRegistrados">
+                <i class="nav-icon fa fa-list-alt"></i> Usuarios Registrados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?c=tendero&m=perfil">
+                <i class="nav-icon fa fa-user"></i> Perfil del Tendero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?c=tendero&m=vender">
+                <i class="nav-icon fa fa-dollar"></i> Vender</a>
+            </li>
+           
+            
+            
+            
+          </ul>
+        </nav>
+        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+      </div>     <main class="main" style="background: #F2EADC ">
+        
+      
+        </ol>
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+              <center><h2 style="color: #5b3924"><strong>Muebles, decoración y vida en el hogar</strong></h2></center>
+            
+              <div class="row">
+                  <div class="container">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      
+                      <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="container-fluid">
+                          <img src="assets/Image/Iniciomuebles.png"  height="580">
+                      </div>
+                      
+                    </div>
+                          <br>
+                        <div class="row">
+                          <div class="col">
+                              <th class="bg-success" colspan="0"><a class="btn bg-warning btn-md btn-block " style="color: #5b3924" href="?c=clientes&m=productosRegistrados">
+                                     <i class="" >Camas</i></a></th>
+                          </div>
+                          <div class="col">
+                           <th class="bg-primary" colspan="0"><a class="btn  bg-warning  btn-md btn-block " style="color: #5b3924"href="?c=clientes&m=productosRegistrados">
+                                   <i class="" > Sillas</i></a></th>  
+                          </div>
+                        </div>
+                          <br>
+                        <div class="row">
+                          <div class="col">
+                              <th class="bg-success" colspan="0" ><a class="btn bg-warning     btn-md btn-block " style="color: #5b3924"href="?c=clientes&m=productosRegistrados">
+                                      <i class="" > Escritorios </i></a></th>
+                          </div>
+                          <div class="col">
+                           <th class="bg-primary" colspan="0"><a class="btn bg-warning btn-md btn-block " style="color: #5b3924"href="?c=clientes&m=productosRegistrados">
+                                   <i class="" > Sofas</i></a></th>  
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                    <table class="table table-bordered container">
+                        <tr>
+                            
+                           
+       
+                        </tr>
+                        </table>
+                         <table class="table table-bordered container">
+                        <tr>
+                           
+                            
+                        </tr>
+                        
+                    </table>
+                      <table class="table table-bordered container">
+                        <tr>
+                           
+                            
+                        </tr>
+                        
+                    </table>
+                  </div>
+              </div>
+              
+              
+              
+          </div>
+        </div>
+      </main>
+     
+        
+</div><footer class="app-footer" style="background-color: #eec170">
+      <div>
+          <a style="color:#F2EADC" href="http://www.sena.edu.co/es-co/Paginas/default.aspx">SENA</a>
+        <span style="color:#5b3924">&copy; 2019 Amoblando Tu Hogar.</span>
+      </div>
+      <div class="ml-auto">
+        <span>Desarrollado por</span>
+        <a style="color:#F2EADC">Carlos Andres Alvarez & John Jairo Vargas</a>
+      </div>
+    </footer>
+
+ 
+ 
+
+
+
+
+    <!-- CoreUI and necessary plugins-->
+    <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/node_modules/pace-progress/pace.min.js"></script>
+    <script src="assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="assets/node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="assets/node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="assets/node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
